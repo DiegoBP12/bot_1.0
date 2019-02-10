@@ -1,0 +1,26 @@
+$def with(datos)
+<br>
+<h1 class="text-center"><img src="/static/images/update.png" height="50" width="50">  Actualizar</h1>
+<br>
+<form method="POST">
+        <section class="form-group">
+            <label for="id_batman">ID</label>
+            <input type="text" class="form-control" readonly="true" value="$datos.id_batman" id="id_batman" name="id_batman">
+        </section>
+        <section class="form-group">
+            <label for="descripcion">Descripción</label>
+            <input type="text" class="form-control" value="$datos.descripcion" id="descripcion" name="descripcion">
+        </section>
+        <section class="form-group">
+                <label for="version">Versión</label>
+                <input type="text" class="form-control"  value="$datos.version" id="version" name="version">
+        </section>
+        <section class="form-group">
+            <label for="aparicion">Aparición</label>
+            <input type="text" class="form-control" value="$datos.aparicion" id="aparicion" name="aparicion">
+        </section>
+        <br>
+        <button type="submit" class="btn btn-success btn-lg"><img src="/static/images/refresh-button.png" height="15" width="15"> Actualizar</button>
+</form>
+<br>
+<a href="/index_batman"><button class="btn btn-warning btn-lg">Cancelar</button></a>
